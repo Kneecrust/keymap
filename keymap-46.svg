@@ -21,7 +21,7 @@
     }
 
     .number {
-        fill: #e8eaed;
+        fill: #dadde2;
     }
 </style>
 <rect rx="6" ry="6" x="29.5" y="24.5" width="55" height="45" class="number" />

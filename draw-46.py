@@ -30,7 +30,7 @@ STYLE = """
     }
 
     .number {
-        fill: #e8eaed;
+        fill: #dadde2;
     }
 """
 
