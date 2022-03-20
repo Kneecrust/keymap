@@ -40,6 +40,10 @@ STYLE = """
     .combo {
         fill: #B6F2F2;
     }
+    
+    .number{
+        fill: #bfc2c7
+    }
 """
 
 
