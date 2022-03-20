@@ -34,15 +34,15 @@ STYLE = """
     }
 
     .hold {
-        fill: #fdd;
+        fill: #ff8080;
     }
 
     .combo_hold {
-        fill: #fdd;
+        fill: #ff8080;
     }
 
     .combo {
-        fill: #B6F2F2;
+        fill: #79f2f2;
     }
     
     .number{
