@@ -91,7 +91,7 @@ def print_key(x, y, key, combo_flag):
     if key_class == "combo" or key_class == "combo_hold":
         if combo_flag:
             print(
-                f'<path fill="none" stroke="#f5a658" stroke-width="4" stroke-linecap="round" d="M{x+OUTER_PAD_W},{y-KEY_H+INNER_PAD_H*6} A{KEY_W},{KEY_W*1} 0,0,0 {x-OUTER_PAD_W},{y-KEY_H+INNER_PAD_H*6}" />'
+                f'<path fill="none" stroke="#5656A8" stroke-width="4" stroke-linecap="round" d="M{x+OUTER_PAD_W},{y-KEY_H+INNER_PAD_H*6} A{KEY_W},{KEY_W*1} 0,0,0 {x-OUTER_PAD_W},{y-KEY_H+INNER_PAD_H*6}" />'
             )
 
 
