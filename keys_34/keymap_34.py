@@ -15,6 +15,20 @@ KEYMAP = [
         ],
         "thumbs": {"left": ["bkspc", "esc"], "right": ["enter", "space"],},
     },
+    # HOME-ROW MODS
+    {
+        "left": [
+            ["q", "w", "e", "r", "t"],
+            [hl("ctrl"), hl("alt"), hl("cmd"), hl("shift"), "g"],
+            ["z", "x", "c", "v", "b"],
+        ],
+        "right": [
+            ["y", "u", "i", "o", "p"],
+            ["j", hl("shift"), hl("cmd"), hl("alt"), hl("ctrl")],
+            ["m", "n", ",", ".", "/"],
+        ],
+        "thumbs": {"left": ["bkspc", "esc"], "right": ["enter", "space"],},
+    },
     # COMBOS OUTER
     {
         "left": [
@@ -55,7 +69,7 @@ KEYMAP = [
             ["", "shift", "cmd", "alt", "ctrl"],
             ["", "", "", "", ""],
         ],
-        "thumbs": {"left": ["bkspc", "esc"], "right": ["enter", hl("num")],},
+        "thumbs": {"left": ["0", "-"], "right": ["enter", hl("num")],},
     },
     # SYMBOL
     {
@@ -69,7 +83,7 @@ KEYMAP = [
             ["", "shift", "cmd", "alt", "ctrl"],
             ["", "", "", "", ""],
         ],
-        "thumbs": {"left": ["bkspc", "esc"], "right": [hl("sym"), "space"],},
+        "thumbs": {"left": [")", "_"], "right": [hl("sym"), "space"],},
     },
     # FUNCTION
     {
@@ -83,7 +97,7 @@ KEYMAP = [
             ["", "shift", "cmd", "alt", "ctrl"],
             ["", "", "", "", ""],
         ],
-        "thumbs": {"left": ["bkspc", "esc"], "right": [ch("func"), ch("func")],},
+        "thumbs": {"left": ["", ""], "right": [ch("func"), ch("func")],},
     },
     # NAVIGATION
     {

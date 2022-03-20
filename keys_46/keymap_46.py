@@ -17,6 +17,22 @@ KEYMAP = [
         ],
         "thumbs": {"left": ["del", "bkspc", "esc"], "right": ["enter", "space", "tab"],},
     },
+    # HOME-ROW MODS
+    {
+        "left": [
+            [nm("1"), nm("2"), nm("3"), nm("4"), nm("5")],
+            ["q", "w", "e", "r", "t"],
+            [hl("ctrl"), hl("alt"), hl("cmd"), hl("shift"), "g"],
+            ["z", "x", "c", "v", "b"],
+        ],
+        "right": [
+            [nm("6"), nm("7"), nm("8"), nm("9"), nm("0")],
+            ["y", "u", "i", "o", "p"],
+            ["j", hl("shift"), hl("cmd"), hl("alt"), hl("ctrl")],
+            ["m", "n", ",", ".", "/"],
+        ],
+        "thumbs": {"left": ["del", "bkspc", "esc"], "right": ["enter", "space", "tab"],},
+    },
     # COMBOS OUTER
     {
         "left": [
