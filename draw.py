@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 from sys import argv
 from importlib import import_module
 
@@ -5,7 +7,7 @@ from importlib import import_module
 if len(argv) > 1:
     KEYMAP = import_module(argv[1]).KEYMAP
 else:
-    from keymap_34 import KEYMAP
+    from keys_34.keymap_34 import KEYMAP
 
 # define key-related dimensions
 KEY_W = 55
