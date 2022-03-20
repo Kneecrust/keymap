@@ -7,5 +7,7 @@ Legend:
 
 ## [34-key](https://github.com/BrokenFlows/zmk-brokenflows/blob/master/config/zaphod.keymap)
 ![34-key keymap](keys_34/keymap-34.svg)
+## 36-key
+![36-key keymap](keys_36/keymap-36.svg)
 ## [46-key](https://github.com/BrokenFlows/zmk-brokenflows/blob/master/config/ishka.keymap)
 ![46-key keymap](keys_46/keymap-46.svg)
