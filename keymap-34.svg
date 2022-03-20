@@ -12,7 +12,7 @@
         fill: #f6f8fa;
     }
 
-    .held {
+    .hold {
         fill: #fdd;
     }
 
@@ -299,7 +299,7 @@
 <text text-anchor="middle" dominant-baseline="middle" x="293.0" y="849.5">esc</text>
 <rect rx="6" ry="6" x="352.0" y="827.0" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="379.5" y="849.5">enter</text>
-<rect rx="6" ry="6" x="411.0" y="827.0" width="55" height="45" class="held" />
+<rect rx="6" ry="6" x="411.0" y="827.0" width="55" height="45" class="hold" />
 <text text-anchor="middle" dominant-baseline="middle" x="438.5" y="849.5">num</text>
 <rect rx="6" ry="6" x="29.5" y="898.5" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="57.0" y="921.0">{</text>
@@ -354,7 +354,7 @@
 <text text-anchor="middle" dominant-baseline="middle" x="234.0" y="1068.0">bkspc</text>
 <rect rx="6" ry="6" x="265.5" y="1045.5" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="293.0" y="1068.0">esc</text>
-<rect rx="6" ry="6" x="352.0" y="1045.5" width="55" height="45" class="held" />
+<rect rx="6" ry="6" x="352.0" y="1045.5" width="55" height="45" class="hold" />
 <text text-anchor="middle" dominant-baseline="middle" x="379.5" y="1068.0">sym</text>
 <rect rx="6" ry="6" x="411.0" y="1045.5" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="438.5" y="1068.0">space</text>
@@ -463,7 +463,7 @@
 <text text-anchor="middle" dominant-baseline="middle" x="556.5" y="1465.0">up</text>
 <rect rx="6" ry="6" x="588.0" y="1433.5" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="615.5" y="1456.0">end</text>
-<rect rx="6" ry="6" x="206.5" y="1482.5" width="55" height="45" class="held" />
+<rect rx="6" ry="6" x="206.5" y="1482.5" width="55" height="45" class="hold" />
 <text text-anchor="middle" dominant-baseline="middle" x="234.0" y="1505.0">nav</text>
 <rect rx="6" ry="6" x="265.5" y="1482.5" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="293.0" y="1505.0">esc</text>
@@ -518,7 +518,7 @@
 <text text-anchor="middle" dominant-baseline="middle" x="615.5" y="1674.5">bt0</text>
 <rect rx="6" ry="6" x="206.5" y="1701.0" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="234.0" y="1723.5">bkspc</text>
-<rect rx="6" ry="6" x="265.5" y="1701.0" width="55" height="45" class="held" />
+<rect rx="6" ry="6" x="265.5" y="1701.0" width="55" height="45" class="hold" />
 <text text-anchor="middle" dominant-baseline="middle" x="293.0" y="1723.5">media</text>
 <rect rx="6" ry="6" x="352.0" y="1701.0" width="55" height="45" class="" />
 <text text-anchor="middle" dominant-baseline="middle" x="379.5" y="1723.5">mute</text>

@@ -1,5 +1,5 @@
 def hl(key):
-    return {"key": key, "class": "held"}
+    return {"key": key, "class": "hold"}
 
 def cm(key):
     return {"key": key, "class": "combo"}
