@@ -7,7 +7,7 @@ from importlib import import_module
 if len(argv) > 1:
     KEYMAP = import_module(argv[1]).KEYMAP
 else:
-    from keys_34.keymap_34 import KEYMAP
+    from keys_36.keymap_36 import KEYMAP
 
 # define key-related dimensions
 KEY_W = 55
