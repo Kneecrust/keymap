@@ -13,18 +13,18 @@ KEYMAP = [
             ["j", "j", "k", "l", ";", "shift"],
             ["m", "n", ",", ".", "/", ph("")],
         ],
-        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc"],},
     },
     # HOME-ROW MODS
     {
         "left": [
             [ph(""), "q", "w", "e", "r", "t"],
-            [hl("ctrl"), hl("alt"), hl("cmd"), hl("shift"), "g"],
+            ["shift", hl("ctrl"), hl("alt"), hl("cmd"), hl("shift"), "g"],
             [ph(""), "z", "x", "c", "v", "b"],
         ],
         "right": [
             ["y", "u", "i", "o", "p", ph("")],
-            ["j", hl("shift"), hl("cmd"), hl("alt"), hl("ctrl")],
+            ["j", hl("shift"), hl("cmd"), hl("alt"), hl("ctrl"),"shift"],
             ["m", "n", ",", ".", "/", ph("")],
         ],
         "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},

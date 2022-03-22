@@ -1,5 +1,3 @@
-#! /usr/bin/env python3
-
 from sys import argv
 from importlib import import_module
 
@@ -7,7 +5,7 @@ from importlib import import_module
 if len(argv) > 1:
     KEYMAP = import_module(argv[1]).KEYMAP
 else:
-    from keys_36.keymap_36 import KEYMAP
+    from keys_36.keymap_36_test import KEYMAP
 
 # define key-related dimensions
 KEY_W = 55
@@ -50,7 +48,7 @@ STYLE = """
     }
 
     .invisible{
-        
+        fill: #ffffff;
     }
 """
 
@@ -182,7 +180,6 @@ def print_board(x, y, keymap):
         y += OUTER_PAD_H
         print_layer(x, y, layer)
         y += LAYER_H
-
 
 print(
     f'<svg width="{BOARD_W}" height="{BOARD_H}" viewBox="0 0 {BOARD_W} {BOARD_H}" xmlns="http://www.w3.org/2000/svg">'
