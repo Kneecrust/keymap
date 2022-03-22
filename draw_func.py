@@ -10,3 +10,5 @@ def ch(key):
 def nm(key):
     return {"key": key, "class": "number"}
 
+def ph(key):
+    return {"key": key, "class": "invisible"}

@@ -48,6 +48,10 @@ STYLE = """
     .number{
         fill: #bfc2c7
     }
+
+    .invisible{
+        
+    }
 """
 
 
@@ -68,7 +72,7 @@ for layer in KEYMAP:
         rows += 1
     break
 
-cols = 5
+cols = 6
 
 # define dimensions for svg components
 KEYSPACE_W = KEY_W + 2 * INNER_PAD_W

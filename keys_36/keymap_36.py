@@ -1,131 +1,131 @@
-from draw_func import hl, cm, ch
+from draw_func import hl, cm, ch, ph
 
 KEYMAP = [
     # BASE
     {
         "left": [
-            ["q", "w", "e", "r", "t"],
+            [ph(""), "q", "w", "e", "r", "t"],
             ["shift", "a", "s", "d", "f", "g"],
-            ["z", "x", "c", "v", "b"],
+            [ph(""), "z", "x", "c", "v", "b"],
         ],
         "right": [
-            ["y", "u", "i", "o", "p"],
+            ["y", "u", "i", "o", "p", ph("")],
             ["j", "j", "k", "l", ";", "shift"],
-            ["m", "n", ",", ".", "/"],
+            ["m", "n", ",", ".", "/", ph("")],
         ],
         "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # HOME-ROW MODS
     {
         "left": [
-            ["q", "w", "e", "r", "t"],
+            [ph(""), "q", "w", "e", "r", "t"],
             [hl("ctrl"), hl("alt"), hl("cmd"), hl("shift"), "g"],
-            ["z", "x", "c", "v", "b"],
+            [ph(""), "z", "x", "c", "v", "b"],
         ],
         "right": [
-            ["y", "u", "i", "o", "p"],
+            ["y", "u", "i", "o", "p", ph("")],
             ["j", hl("shift"), hl("cmd"), hl("alt"), hl("ctrl")],
-            ["m", "n", ",", ".", "/"],
+            ["m", "n", ",", ".", "/", ph("")],
         ],
-        "thumbs": {"left": ["del", "bkspc", "esc"], "right": ["enter", "space", "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # COMBOS OUTER
     {
         "left": [
-            ["q", cm("{"), cm("{"), "r", "t"],
-            ["a", cm("["), cm("["), "f", "g"],
-            ["z", cm("`"), cm("`"), "v", "b"],
+            [ph(""), "q", cm("{"), cm("{"), "r", "t"],
+            ["shift", "a", cm("["), cm("["), "f", "g"],
+            [ph(""), "z", cm("`"), cm("`"), "v", "b"],
         ],
         "right": [
-            ["y", "u", cm("="), cm("="), "p"],
-            ["j", "j", cm("'"), cm("'"), ";"],
-            ["m", "n", cm("\\"), cm("\\"), "/"],
+            ["y", "u", cm("="), cm("="), "p", ph("")],
+            ["j", "j", cm("'"), cm("'"), ";", "shift"],
+            ["m", "n", cm("\\"), cm("\\"), "/", ph("")],
         ],
-        "thumbs": {"left": ["del", "bkspc", "esc"], "right": ["enter", "space", "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
         },
     # COMBOS INNER
     {
         "left": [
-            ["q", "w", cm("}"), cm("}"), "t"],
-            ["a", "s", cm("]"), cm("]"), "g"],
-            ["z", "x", cm("~"), cm("~"), "b"],
+            [ph(""), "q", "w", cm("}"), cm("}"), "t"],
+            ["shift", "a", "s", cm("]"), cm("]"), "g"],
+            [ph(""), "z", "x", cm("~"), cm("~"), "b"],
         ],
         "right": [
-            ["y", cm("-"), cm("-"), "o", "p"],
-            ["j", "j", "k", "l", ";"],
-            ["m", "n", ",", ".", "/"],
+            ["y", cm("-"), cm("-"), "o", "p", ph("")],
+            ["j", "j", "k", "l", ";","shift"],
+            ["m", "n", ",", ".", "/", ph("")],
         ],
-        "thumbs": {"left": ["del", "bkspc", "esc"], "right": ["enter", "space", "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # NUMBER
     {
         "left": [
-            ["[", "7", "8", "9", "]"],
-            ["'", "4", "5", "6", "="],
-            ["`", "1", "2", "3", "\\"],
+            [ph(""), "[", "7", "8", "9", "]"],
+            ["shift, ""'", "4", "5", "6", "="],
+            [ph(""), "`", "1", "2", "3", "\\"],
         ],
         "right": [
-            ["", "", "", "", ""],
-            ["", "shift", "cmd", "alt", "ctrl"],
-            ["", "", "", "", ""],
+            ["", "", "", "", "",ph("")],
+            ["", "shift", "cmd", "alt", "ctrl","shift"],
+            ["", "", "", "", "",ph("")],
         ],
-        "thumbs": {"left": [".", "0", "-"], "right": ["enter", hl("num"), "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # SYMBOL
     {
         "left": [
-            ["{", "&amp;", "*", "(", "}"],
-            ["\"","$", "%", "@", "+"],
-            ["~", "!", "@", "#", "|"],
+            [ph(""), "{", "&amp;", "*", "(", "}"],
+            ["shift","\"","$", "%", "@", "+"],
+            [ph(""), "~", "!", "@", "#", "|"],
         ],
         "right": [
-            ["", "", "", "", ""],
-            ["", "shift", "cmd", "alt", "ctrl"],
-            ["", "", "", "", ""],
+            ["", "", "", "", "", ph("")],
+            ["", "shift", "cmd", "alt", "ctrl", "shift"],
+            ["", "", "", "", "",ph("")],
         ],
-        "thumbs": {"left": [".", ")", "_"], "right": [hl("sym"), "space", "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # FUNCTION
     {
         "left": [
-            ["F12", "F7", "F8", "F9", "pscrn"],
-            ["F11", "F4", "F5", "F6", "slck"],
-            ["F10", "F1", "F2", "F3", "psbrk"],
+            [ph(""), "F12", "F7", "F8", "F9", "pscrn"],
+            ["shift","F11", "F4", "F5", "F6", "slck"],
+            [ph(""), "F10", "F1", "F2", "F3", "psbrk"],
         ],
         "right": [
-            ["", "", "", "", ""],
-            ["", "shift", "cmd", "alt", "ctrl"],
-            ["", "", "", "", ""],
+            ["", "", "", "", "",ph("")],
+            ["", "shift", "cmd", "alt", "ctrl","shift"],
+            ["", "", "", "", "",ph("")],
         ],
-        "thumbs": {"left": ["", "", ""], "right": ["enter", "space", hl("func")],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # NAVIGATION
     {
         "left": [
-            ["", "", "", "", ""],
-            ["ctrl", "alt", "cmd", "shift", ""],
-            ["", "", "", "", ""],
+            [ph(""), "", "", "", "", ""],
+            ["shift","ctrl", "alt", "cmd", "shift", ""],
+            [ph(""), "", "", "", "", ""],
         ],
         "right": [
-            ["", "", "", "", ""],
-            ["caps lock", "left", "down", "up", "right"],
-            ["ins", "home", "page down", "page up", "end"],
+            ["", "", "", "", "",ph("")],
+            ["caps lock", "left", "down", "up", "right","shift"],
+            ["ins", "home", "page down", "page up", "end",ph("")],
         ],
-        "thumbs": {"left": ["del", hl("nav"), "esc"], "right": ["enter", "space", "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # MEDIA
     {
         "left": [
-            ["", "", "", "", ""],
-            ["ctrl", "alt", "cmd", "shift", ""],
-            ["", "", "", "", ""],
+            [ph(""), "", "", "", "", ""],
+            ["shift","ctrl", "alt", "cmd", "shift", ""],
+            [ph(""), "", "", "", "", ""],
         ],
         "right": [
-            ["", "", "", "", ""],
-            ["", "prev", "vol down", "vol up", "next"],
-            ["bt4", "bt3", "bt2", "bt1", "bt0"],
+            ["", "", "", "", "",ph("")],
+            ["", "prev", "vol down", "vol up", "next","shift"],
+            ["bt4", "bt3", "bt2", "bt1", "bt0",ph("")],
         ],
-        "thumbs": {"left": ["del", "bkspc", hl("media")], "right": ["mute", "play pause", "stop"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
 ]
 
