@@ -5,15 +5,15 @@ KEYMAP = [
     {
         "left": [
             ["q", "w", "e", "r", "t"],
-            ["a", "s", "d", "f", "g"],
+            ["shift", "a", "s", "d", "f", "g"],
             ["z", "x", "c", "v", "b"],
         ],
         "right": [
             ["y", "u", "i", "o", "p"],
-            ["j", "j", "k", "l", ";"],
+            ["j", "j", "k", "l", ";", "shift"],
             ["m", "n", ",", ".", "/"],
         ],
-        "thumbs": {"left": ["del", "bkspc", "esc"], "right": ["enter", "space", "tab"],},
+        "thumbs": {"left": ["space", "esc"], "right": ["enter", "bkspc",],},
     },
     # HOME-ROW MODS
     {
