@@ -20,31 +20,33 @@ KEYMAP = [
     {
         "left": [
             [ph(""), "Q", "W", "F", "P", "B", ph("")],
-            [hl("shift"), "A", "R", "S", hm("T"), "G", ph("")],
+            ["shift", "A", "R", "S", hm("T"), "G", ph("")],
             [ph(""), "Z", "X", "C", "D", "V", ph("")],
         ],
         "right": [
             [ph(""),"J", "L", "U", "Y", ":", ph("")],
-            [ph(""),"M", hm("N"), "E", "I", "O", hl("shift")],
+            [ph(""),"M", hm("N"), "E", "I", "O", "shift"],
             [ph(""),"K", "H", "&lt;", "&gt;", "?", ph("")],
         ],
         "thumbs": {"left": ["space", "enter"], "right": ["esc", "bkspc"],},
     },
 
-    # HOME-ROW MODS
+    # ALL LAYERS & MODS
+
     {
         "left": [
-            [ph(""), "q", "w", "f", "p", "b", ph("")],
-            ["shift", "a", hl("ctrl"), hl("alt"), hl("win"), "g", ph("")],
-            [ph(""), "z", "x", "c", "d", "v", ph("")],
+            [ph(""), "", "", "", "", "", ph("")],
+            [hl("nav"), "", hl("ctrl"), hl("alt"), hl("win"), "", ph("")],
+            [ph(""), "", "", "", "", "", ph("")],
         ],
         "right": [
-            [ph(""),"j", "l", "u", "y", ";", ph("")],
-            [ph(""),"m", hl("win"), hl("alt"), hl("ctrl"), "o", "shift"],
-            [ph(""),"k", "h", ",", ".", "/", ph("")],
+            [ph(""),"", "", "", "", "", ph("")],
+            [ph(""),"", hl("win"), hl("alt"), hl("ctrl"), "", hl("func")],
+            [ph(""),"", "", "", "", "", ph("")],
         ],
-        "thumbs": {"left": ["space", "enter"], "right": ["esc", "bkspc"],},
+        "thumbs": {"left": [hl("num"), hl("sym")], "right": ["esc", "bkspc"],},
     },
+
     # COMBOS OUTER
     {
         "left": [
@@ -133,22 +135,6 @@ KEYMAP = [
             [ph(""),"tab", "home", "end", "ins", "", ph("")],
         ],
         "thumbs": {"left": ["space", "enter"], "right": ["esc", "bkspc"],},
-    },
-
-    # ALL LAYERS & MODS
-
-     {
-        "left": [
-            [ph(""), "", "", "", "", "", ph("")],
-            [hl("nav"), "", hl("ctrl"), hl("alt"), hl("win"), "", ph("")],
-            [ph(""), "", "", "", "", "", ph("")],
-        ],
-        "right": [
-            [ph(""),"", "", "", "", "", ph("")],
-            [ph(""),"", hl("win"), hl("alt"), hl("ctrl"), "", hl("func")],
-            [ph(""),"", "", "", "", "", ph("")],
-        ],
-        "thumbs": {"left": [hl("num"), hl("sym")], "right": ["esc", "bkspc"],},
     },
 ]
 
