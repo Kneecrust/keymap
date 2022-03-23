@@ -5,11 +5,11 @@ from importlib import import_module
 if len(argv) > 1:
     KEYMAP = import_module(argv[1]).KEYMAP
 else:
-    from keys_36.keymap_36_test import KEYMAP
+    from keys_36.keymap_36 import KEYMAP
 
 # define key-related dimensions
 KEY_W = 55
-KEY_H = 45
+KEY_H = 50
 KEY_RX = 6
 KEY_RY = 6
 INNER_PAD_W = 2
@@ -48,7 +48,11 @@ STYLE = """
     }
 
     .invisible{
-        fill: #ffffff;
+        opacity: 0;
+    }
+
+    .home{
+        fill: #dbdbdb
     }
 """
 
@@ -70,7 +74,7 @@ for layer in KEYMAP:
         rows += 1
     break
 
-cols = 6
+cols = 7
 
 # define dimensions for svg components
 KEYSPACE_W = KEY_W + 2 * INNER_PAD_W

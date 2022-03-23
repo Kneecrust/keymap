@@ -12,3 +12,6 @@ def nm(key):
 
 def ph(key):
     return {"key": key, "class": "invisible"}
+
+def hm(key):
+    return {"key": key, "class": "home"}
