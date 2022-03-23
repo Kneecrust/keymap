@@ -74,6 +74,7 @@ for layer in KEYMAP:
         rows += 1
     break
 
+# Change this number to match the number of columns your keyboard/layout has.
 cols = 7
 
 # define dimensions for svg components
