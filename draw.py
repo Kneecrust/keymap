@@ -52,7 +52,7 @@ STYLE = """
     }
 
     .home{
-        fill: #565656;
+        fill: #ccffb9;
     }
 """
 

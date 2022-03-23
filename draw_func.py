@@ -16,7 +16,7 @@ def nm(key):
 # It has the opacity set to 0% so you won't even see the key is there.
 def ph(key):
     return {"key": key, "class": "invisible"}
-# This makes the key grey for home key. 
+# This makes the key green for home key. 
 # (I just used the two index finger home keys)
 def hm(key):
     return {"key": key, "class": "home"}
