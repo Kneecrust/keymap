@@ -83,13 +83,14 @@ KEYSPACE_H = KEY_H + 2 * INNER_PAD_H
 HAND_W = cols * KEYSPACE_W
 HAND_H = rows * KEYSPACE_H
 LAYER_W = 2 * HAND_W + OUTER_PAD_W
-LAYER_H = HAND_H
+# added + KEY_H to make the layers not overlap due to the added extra thumb row
+LAYER_H = HAND_H + KEY_H
 BOARD_W = LAYER_W + 2 * OUTER_PAD_W
 BOARD_H = layers * LAYER_H + padding * OUTER_PAD_H
 
 
 def print_key(x, y, key, combo_flag):
-    key_class = "" # placeholder for class value
+    key_class = ""  # placeholder for class value
     if type(key) is dict:
         key_class = key["class"]
         key = key["key"]
@@ -102,7 +103,7 @@ def print_key(x, y, key, combo_flag):
     # prepare text
     words = key.split()
     y += (KEYSPACE_H - (len(words) - 1) * LINE_SPACING) / 2
-    
+
     # prints text on key
     for word in key.split():
         print(
@@ -119,25 +120,25 @@ def print_key(x, y, key, combo_flag):
 
 
 def print_row(x, y, row):
-    for index,key in enumerate(row):
+    for index, key in enumerate(row):
 
-        now_combo = False # flag when the current key is a combo
-        combo_flag = False # flag when th current and previous keys are combos
-        
+        now_combo = False  # flag when the current key is a combo
+        combo_flag = False  # flag when th current and previous keys are combos
+
         # placeholders for class values
         key_class = ""
         prev_class = ""
-        
+
         # if there's a key class, get it
         if type(key) is dict:
             key_class = key["class"]
-        
+
         # flag if the key is a sort of combo
         if "combo" in key_class:
             if index > 0:
                 prev = row[index-1]
                 now_combo = True
-        
+
         # check if the previous keys is also a combo key
         if now_combo:
             if type(prev) is dict:
@@ -171,11 +172,14 @@ def print_layer(x, y, layer):
 
     # print the thumbs below the main blocks
     # account for thumb count and row count in thumb placement
-    print_row(
-        x + (cols-len(layer["thumbs"]["left"])) * KEYSPACE_W, y + rows * KEYSPACE_H, layer["thumbs"]["left"],
+        # changed print_row to print_block for both to enable two thumb rows
+    print_block(
+        x + (cols-len(layer["thumbs"]["left"])) * KEYSPACE_W, y +
+        rows * KEYSPACE_H, layer["thumbs"]["left"],
     )
-    print_row(
-        x + HAND_W + OUTER_PAD_W, y + rows * KEYSPACE_H, layer["thumbs"]["right"],
+    print_block(
+        x + HAND_W + OUTER_PAD_W, y + rows *
+        KEYSPACE_H, layer["thumbs"]["right"],
     )
 
 
@@ -186,10 +190,10 @@ def print_board(x, y, keymap):
         print_layer(x, y, layer)
         y += LAYER_H
 
+
 print(
     f'<svg width="{BOARD_W}" height="{BOARD_H}" viewBox="0 0 {BOARD_W} {BOARD_H}" xmlns="http://www.w3.org/2000/svg">'
 )
 print(f"<style>{STYLE}</style>")
 print_board(0, 0, KEYMAP)
 print("</svg>")
-
